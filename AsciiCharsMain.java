@@ -26,29 +26,27 @@ public class AsciiCharsMain {
 		
 		// do this
 		if(userCorrectChoice.toUpperCase().equals("NO") || userCorrectChoice.toUpperCase().equals("N")){
-			System.out.print("\n Your choice is :  " + "NO Godbye" );     //
+			System.out.print("\n Thank you  " + userName  + " for visiting.  Goodbye" );     //
 			
 		}
 		if (userCorrectChoice.toUpperCase().equals("YES") || userCorrectChoice.toUpperCase().equalsIgnoreCase("Y") || userCorrectChoice.toUpperCase().equals("NO") || userCorrectChoice.toUpperCase().equals("N")) {
 			
 			while (userCorrectChoice.toUpperCase().equals("YES") || userCorrectChoice.toUpperCase().equalsIgnoreCase("Y")){
-	
-				System.out.print(" Your choice is :  " + userCorrectChoice);     // 
-				
-				int lotoryNum = AsciiCharsLotory.playLotory();
+					
+				String lotoryNum = AsciiCharsLotory.playLotory();
 				System.out.println(" \n The Lotory Number is::   " + lotoryNum);
 				
 				System.out.print("\n\n Do you wish to continue to the interactive portion ??? ------- ");     //
 				choice = mySc.next();
 				userCorrectChoice = checkUserChoice(choice);
 				if(userCorrectChoice.toUpperCase().equals("NO") || userCorrectChoice.toUpperCase().equals("N")){
-					System.out.print("\n Your choice is :  " + "NO Godbye" );     //
+					System.out.print("\n Thank you  " + userName  + " for visiting.  Goodbye" );     //
 					
 				}
 			} //	while
 			
 		} else if(userCorrectChoice.toUpperCase().equals("NO") || userCorrectChoice.toUpperCase().equals("N")){ ///==============================
-			System.out.print("\n Your choice is :  " + "NO Godbye" );     //
+			System.out.print("\n Thank you  " + userName  + " for visiting.  Goodbye" );     //
 			
 		} // else
 		
